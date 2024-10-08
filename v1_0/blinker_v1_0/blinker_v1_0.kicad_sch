@@ -1873,7 +1873,7 @@
 				)
 			)
 			(symbol "Solder_point_1_1"
-				(pin input line
+				(pin bidirectional line
 					(at -1.27 0 180)
 					(length 2.54)
 					(name ""
@@ -1883,7 +1883,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2117,6 +2117,12 @@
 		(uuid "21877440-c2d6-4320-b220-f96f1ddad311")
 	)
 	(junction
+		(at 58.42 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28f1ba45-1039-465a-b749-6adae6052ac3")
+	)
+	(junction
 		(at 171.45 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2211,12 +2217,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edf8fb59-b735-4bb6-87a1-a301b059104c")
-	)
-	(junction
-		(at 58.42 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee6fbc78-339f-41cf-aeb9-a4a3bc256d76")
 	)
 	(junction
 		(at 191.77 33.02)
@@ -2395,16 +2395,6 @@
 			(type default)
 		)
 		(uuid "2c915f61-0c9d-47d0-b5c6-faafa350cd1a")
-	)
-	(wire
-		(pts
-			(xy 29.21 43.18) (xy 58.42 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "303428f9-5ca9-44af-ac8b-827d70542433")
 	)
 	(wire
 		(pts
@@ -2748,16 +2738,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 53.34) (xy 36.83 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7c96c8c-328a-4162-a19a-21632a1e2f9d")
-	)
-	(wire
-		(pts
 			(xy 171.45 33.02) (xy 191.77 33.02)
 		)
 		(stroke
@@ -2928,6 +2908,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 53.34) (xy 36.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d14f3126-11ad-449c-be7c-635ed7bfea37")
+	)
+	(wire
+		(pts
 			(xy 208.28 105.41) (xy 223.52 105.41)
 		)
 		(stroke
@@ -2955,6 +2945,16 @@
 			(type default)
 		)
 		(uuid "d4db9923-a780-4bd8-94cd-216994739d9a")
+	)
+	(wire
+		(pts
+			(xy 27.94 43.18) (xy 58.42 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90d0a0c-15c2-48b5-8843-fb7e7b5eaf9f")
 	)
 	(wire
 		(pts
@@ -3097,6 +3097,17 @@
 			(justify left bottom)
 		)
 		(uuid "81cd0f76-8fa2-4170-8ae6-e52ba9456044")
+	)
+	(label "Uin"
+		(at 49.53 22.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8b0f7e6-75a0-436e-8828-645fdc45a5d6")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3452,71 +3463,6 @@
 		)
 	)
 	(symbol
-		(lib_id "poradam:Solder_point")
-		(at 30.48 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3775a8db-dba9-4e21-ba51-f69689bba307")
-		(property "Reference" "j1"
-			(at 25.4 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 25.4 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit"
-			(at 30.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 30.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "8f2121f2-e776-4a98-9132-1ade80e737b7")
-		)
-		(instances
-			(project ""
-				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
-					(reference "j1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 144.78 177.8 0)
 		(unit 1)
@@ -3735,6 +3681,71 @@
 			(project ""
 				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "poradam:Solder_point")
+		(at 29.21 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51c722a0-e659-4b57-934f-7a6b06c44440")
+		(property "Reference" "j1"
+			(at 24.13 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Pin:Pin_D1.0mm_L10.0mm"
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f49d5552-191b-4b1c-a4d9-8eabb6739f2f")
+		)
+		(instances
+			(project ""
+				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
+					(reference "j1")
 					(unit 1)
 				)
 			)
@@ -4329,7 +4340,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 			(at 81.28 44.45 0)
 			(effects
 				(font
@@ -4369,6 +4380,71 @@
 			(project ""
 				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "poradam:Solder_point")
+		(at 29.21 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f9e5427-b96b-4414-a9f8-7acfdb3bb2a8")
+		(property "Reference" "j2"
+			(at 24.13 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Pin:Pin_D1.0mm_L10.0mm"
+			(at 29.21 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "152b1399-fcea-4bbc-92f5-2f3d6f0dee65")
+		)
+		(instances
+			(project "blinker_v1_0"
+				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
+					(reference "j2")
 					(unit 1)
 				)
 			)
@@ -5140,71 +5216,6 @@
 			(project ""
 				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "poradam:Solder_point")
-		(at 30.48 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e2e728e5-a9a5-4a3b-afa9-2bbb3fc8ecce")
-		(property "Reference" "j2"
-			(at 25.4 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 25.4 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit"
-			(at 30.48 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 30.48 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "72b8f428-c3ba-4980-9271-8489db7fdc4f")
-		)
-		(instances
-			(project ""
-				(path "/29c5e168-c87e-4bfc-93da-b671c2a73a03"
-					(reference "j2")
 					(unit 1)
 				)
 			)
